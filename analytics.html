@@ -2,13 +2,12 @@
 <html>
 <head>
   <title>Dummy Sign-Up Page</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNSCG7L67D"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'G-RNSCG7L67D');
+    gtag('config', 'G-XXXXXXX');
 
     function trackSignUp() {
       gtag('event', 'sign_up', {
@@ -17,9 +16,29 @@
       alert('Sign-up event sent to GA4!');
     }
   </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
   <h1>Welcome to the Dummy Website</h1>
+  <p>Click below to simulate a user registration</p>
   <button onclick="trackSignUp()">Register</button>
 </body>
 </html>
