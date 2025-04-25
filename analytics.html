@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dummy Sign-Up Page</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNSCG7L67D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RNSCG7L67D');
+
+    function trackSignUp() {
+      gtag('event', 'sign_up', {
+        method: 'dummy_button_click'
+      });
+      alert('Sign-up event sent to GA4!');
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to the Dummy Website</h1>
+  <button onclick="trackSignUp()">Register</button>
+</body>
+</html>
